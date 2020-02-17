@@ -41,7 +41,7 @@ class Dog
   end 
   
   def self.create(name:, breed:)
-    
+    dog = Dog.new
   
   def update
     sql = <<-SQL
