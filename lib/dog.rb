@@ -30,4 +30,6 @@ class Dog
     sql = <<-SQL
     UPDATE dogs 
     SET name = ?, breed = ?
+    WHERE ID = ?
+    
 end 
