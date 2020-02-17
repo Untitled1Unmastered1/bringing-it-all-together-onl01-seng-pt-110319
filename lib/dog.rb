@@ -33,6 +33,8 @@ class Dog
       sql = <<-SQL 
       INSERT INTO DOGS (name, breed)
       VALUES (?, ?)
+      SQL
+      DB[:conn].execute(sql, self.name, self.breed)
   
   def update
     sql = <<-SQL
