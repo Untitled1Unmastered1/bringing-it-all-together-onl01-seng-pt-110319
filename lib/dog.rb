@@ -40,8 +40,7 @@ class Dog
     end 
   end 
   
-  def self.create 
-    
+  def self.create(name: )
   
   def update
     sql = <<-SQL
