@@ -54,10 +54,8 @@ class Dog
   end 
   
   def self.find_by_id 
-    if self.id == self 
-      self
-    else 
-      
+    sql = <<-SQL 
+    
   
   
   def update
