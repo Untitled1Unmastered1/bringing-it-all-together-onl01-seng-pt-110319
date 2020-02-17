@@ -32,6 +32,7 @@ class Dog
     else 
       sql = <<-SQL 
       INSERT INTO DOGS (name, breed)
+      VALUES (?, ?)
   
   def update
     sql = <<-SQL
