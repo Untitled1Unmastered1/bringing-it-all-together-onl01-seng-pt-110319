@@ -46,6 +46,9 @@ class Dog
     dog 
   end 
   
+  def self.new_from_db(row)
+    
+  
   def update
     sql = <<-SQL
     UPDATE dogs 
