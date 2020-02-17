@@ -31,7 +31,7 @@ class Dog
       self.update
     else 
       sql = <<-SQL 
-      
+      INSERT INTO DOGS (name, breed)
   
   def update
     sql = <<-SQL
