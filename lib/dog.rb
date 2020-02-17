@@ -50,7 +50,9 @@ class Dog
     id = row[0]
     name = row[1]
     breed = row[2]
-    self.new()
+    self.new(name: name, breed: breed, id: id)
+  end 
+  
   
   def update
     sql = <<-SQL
