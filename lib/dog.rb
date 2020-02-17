@@ -56,7 +56,8 @@ class Dog
   def self.find_by_id 
     sql = <<-SQL 
       SELECT * FROM DOGS 
-      WHERE id = ? 
+      WHERE id = ? LIMIT 1 
+      
   
   
   def update
