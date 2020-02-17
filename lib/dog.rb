@@ -35,6 +35,7 @@ class Dog
       VALUES (?, ?)
       SQL
       DB[:conn].execute(sql, self.name, self.breed)
+      
   
   def update
     sql = <<-SQL
