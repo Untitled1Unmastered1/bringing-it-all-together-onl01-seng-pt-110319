@@ -56,8 +56,10 @@ class Dog
   def self.find_by_id 
     sql = <<-SQL 
       SELECT * FROM DOGS 
-      WHERE id = ? LIMIT 1 
-      
+      WHERE id = ? LIMIT 1
+      SQL
+      DB[:conn].execute(sql)
+    
   
   
   def update
