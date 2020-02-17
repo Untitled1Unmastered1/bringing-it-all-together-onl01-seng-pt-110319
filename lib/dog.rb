@@ -58,7 +58,7 @@ class Dog
       SELECT * FROM DOGS 
       WHERE id = ? LIMIT 1
       SQL
-      DB[:conn].execute(sql)
+      DB[:conn].execute(sql, id).map do |
     
   
   
